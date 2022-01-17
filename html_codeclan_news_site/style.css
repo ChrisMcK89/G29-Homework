@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    
+}
+
+h1 {
+    margin: 0;
+    padding-top: 2.5%;
+    padding-left: 0%;
+    /* padding-top: 20%; */
+
+}
+
+main {
+    padding: 2.5%;
+    padding-top: 0%;
+    margin: 2.5%;
+    margin-top: 0%;
+}
+
+
+body > header {
+    background-color: dodgerblue;
+    color: white;
+    padding-left: 7.1%;
+    padding-bottom: 0.5%;
+}
+
+nav {
+    padding-left: 0;
+    text-align: left;
+}
+
+nav > ul {
+    padding-left: 0;
+}
+
+li {
+    margin: 5%, 0%, 5%, 0%;
+}
+
+body > header > ul{
+    padding-left: 2.5%;
+}
+
+body > footer {
+    background-color: dodgerblue;
+    color: white;
+}
+
+article {
+    padding: 2.5%;
+}
+
+#comments {
+    padding: 2.5%;
+}
+/* body > main {
+
+} */
+
+#aside1 {
+    float: left;
+    display: inline-block;
+    width: 30%;
+    margin: 2.5%;
+    margin-top: 0%;
+    padding-left: 0%;
+    margin-right: 2.5%;
+} 
+
+
+
+#toparticle {
+    display: inline-block;
+    width: 65%;
+}
