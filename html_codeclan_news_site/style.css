@@ -49,6 +49,12 @@ body > footer {
     color: white;
 }
 
+
+#form {
+    width: 50%;
+    margin-bottom: 2%;
+}
+
 article {
     padding: 2.5%;
 }
