@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Current Orders</h1>
+        <div>
+            {% for order in order %}
+            <p>
+               Order {{order.number}} {{order.date}} {{order.cust_name}} {{order.item_name}} {{order.item_description}} {{order.type}} {{order.qty}}   
+            </p>
+            {% endfor %}
+        </div>
+</html>
