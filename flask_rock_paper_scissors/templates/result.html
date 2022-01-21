@@ -1,14 +1,15 @@
-{% extends "base.html" %}
+{% extends "welcome.html" %}
 
  {% block content %}
-        <h1>Rock Paper Scissors!</h1>
-        
         <div>
             <p>
-                {{result}}
+                {{player_1.name}} chooses {{player_1.choice}} 
             </p>
             <p>
-                
+                {{player_2.name}} chooses {{player_2.choice}}
+            </p>
+            <p>
+                {{full_result}}
             </p>
         </div>
     
