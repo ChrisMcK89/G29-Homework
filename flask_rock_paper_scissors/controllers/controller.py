@@ -4,7 +4,7 @@ from rps import app
 from models.player import *
 from models.game import *
 
-@app.route('/welcome/<player_1_choice>/<player_2_choice>')
+@app.route('/result/<player_1_choice>/<player_2_choice>')
 def return_choice(player_1_choice, player_2_choice):
     player_1 = Player("Chris", player_1_choice)
     player_2 = Player("Steve", player_2_choice)
@@ -24,6 +24,19 @@ def return_choice(player_1_choice, player_2_choice):
 @app.route('/welcome')
 def welcome_page():
     return render_template('welcome.html', title='welcome')
+
+@app.route('/player1rock')
+def rock_page():
+    return render_template('player1rock.html', title='Player 1 Rock')
+
+@app.route('/player1paper')
+def paper_page():
+    return render_template('player1paper.html', title='Player 1 Paper')
+
+@app.route('/player1scissors')
+def scissors_page():
+    return render_template('player1scissors.html', title='Player 1 scissors')
+
 
 
 

@@ -1,6 +1,8 @@
-{% extends "welcome.html" %}
-
- {% block content %}
+<html>
+    <head>
+        <title>{{ title }} - Rock Paper Scissors</title>
+    </head>
+    <body>
         <div>
             <p>
                 {{player_1.name}} chooses {{player_1.choice}} 
@@ -12,5 +14,5 @@
                 {{full_result}}
             </p>
         </div>
-    
-  {% endblock %}
+    </body>
+</html>
