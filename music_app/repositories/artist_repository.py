@@ -11,7 +11,7 @@ def save(artist):
     return artist
 
 def delete_all():
-    sql = "DELETE FROM users"
+    sql = "DELETE FROM artists"
     run_sql(sql)
 
 def select(id):
@@ -20,6 +20,6 @@ def select(id):
     values = [id]
     result = run_sql(sql, values)[0]
     if result is not None:
-        artist = artist(result['name'])
+        artist = artist(result['name'], result['artist_id'])
     return artist
 

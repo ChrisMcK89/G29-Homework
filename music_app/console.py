@@ -3,6 +3,9 @@ import repositories.album_repository as album_repository
 from models.artist import Artist
 import repositories.artist_repository as artist_repository
 
+# artist_repository.delete_all()
+# album_repository.delete_all()
+
 artist1 = Artist("Fleetwood Mac")
 artist_repository.save(artist1)
 artist2 = Artist("Oasis")
