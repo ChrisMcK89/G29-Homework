@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf World Rankings</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Golf World Rankings</h1>
+    <form id="new-golfer-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="name" class="primary">Name</label>
+          <input type="text" id="name" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="age" class="primary">Age</label>
+          <input type="number" id="age" required/>
+        </div>
+
+        <div class="form-item">
+            <label for="nationality" class="primary">Nationality</label>
+            <input type="text" id="nationality" required/>
+          </div>
+
+        <div class="form-item">
+          <label for="ranking" class="primary">Ranking</label>
+          <select id="ranking">
+            <option value="" disabled selected></option>
+            <option value="1st">1st</option>
+            <option value="2nd">2nd</option>
+            <option value="3rd">3rd</option>
+            <option value="4th">4th</option>
+            <option value="5th">5th</option>
+            <option value="6th">6th</option>
+            <option value="7th">7th</option>
+            <option value="8th">8th</option>
+            <option value="9th">9th</option>
+            <option value="10th">10th</option>
+            
+          </select>
+        </div>
+        
+        <div class="form-item">
+            <label for="course" class="primary">Favourite Course</label><br>
+            <input type="radio" id="course" name="fav_course" value="St Andrews">
+            <label for="course">St Andrews</label><br>
+            <input type="radio" id="course" name="fav_course" value="Pebble Beach">
+            <label for="course">Pebble Beach</label><br>
+            <input type="radio" id="course" name="fav_course" value="Augusta National">
+            <label for="course">Augusta National</label><br>
+        </div>
+
+
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+    <button id="delete-all">Delete All</button>
+
+    <h1>World Ranking List</h1>
+
+    <ul id="ranking-list"></ul>
+  </body>
+</html>
