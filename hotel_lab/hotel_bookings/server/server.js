@@ -2,9 +2,10 @@ const express = require('express');
 const app = express();
 const MongoClient = require('mongodb').MongoClient;
 const createRouter = require('./helpers/create_router');
+const cors = require('cors');
 
 app.use(express.json());
-// app.use(cors());
+app.use(cors());
 
 MongoClient.connect('mongodb://0.0.0.0:27017', {useUnifiedTopology : true})
 .then((client) => {
