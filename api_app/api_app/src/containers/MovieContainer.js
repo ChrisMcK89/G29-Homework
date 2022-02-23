@@ -15,6 +15,7 @@ const MovieContainer = () => {
       getMovies();
     }, [])
 
+    const searchterm = "aliens";
 
     const getMovies = function(){
         fetch('http://www.omdbapi.com/?apikey=682debb8&s=aliens')
