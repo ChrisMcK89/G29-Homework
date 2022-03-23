@@ -1,0 +1,23 @@
+Q1. What does the word 'polymorphism' mean?
+
+It allows us to perform a single action in different ways.
+
+Q2. What does it mean when we apply polymorphism to OO design? Give a simple Java example?
+
+Polymorphism is the capability of a method to do different things based on the object
+that it is acting upon. A good example of this would be an animal class that has a method sound().
+as it is a generic class we can't implement this. We can have Horse and Cat that can inherit the
+sound() method and can "Neigh" and "Meow". The action it performs is based on the object.
+
+Q3. What can we use to implement polymorphism in Java?
+
+We can use a combination of methods, inheritance, super/sub classes and interfaces.
+
+Q4. How many 'forms' can an object take when using polymorphism?
+
+There are two types of polymorphism in Java: compile-time polymorphism and runtime polymorphism.
+
+Q5. Give an example of when you could use polymorphism.
+
+You could use this when there are many classes that are related to each other and that they would
+use the same methods.

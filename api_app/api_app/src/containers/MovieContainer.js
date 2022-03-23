@@ -5,6 +5,10 @@ import MovieSelect from "../components/MovieSelect";
 
 const MovieContainer = () => {
 
+    var Highcharts = require('highcharts');  
+
+
+
 
     const [movies, setMovies] = useState([]);
     const [selectedMovie, setSelectedMovie] = useState(null);

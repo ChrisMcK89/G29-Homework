@@ -1,0 +1,34 @@
+Q1. What do we mean by 'composition' in reference to object-oriented programming?
+
+composition is a design technique in java to implement a has-a relationship. It is when you use an instance
+variable that refers to other objects.
+
+Q2. When would you use composition? Provide a simple example in Java.
+
+A composition in Java between two objects associated with each other exists when there
+is a strong relationship between one class and another. Other classes cannot exist without
+the owner or parent class.
+
+An example of this would be a library class and a book class. If we get rid of the library class then the
+books class will not work. Books can't exist without the library and the relation between these is
+composition.
+
+Q.3 Give a difference between composition and aggregation?
+
+An aggregation container class and referenced class can have an independent existence.
+A composition reference class cannot exist if the container class is destroyed.
+
+Q4. What is/are the advantage(s) of using composition/aggregation?
+
+Classes achieve polymorphism and code reuse by composition. Composition in Java offers better
+class testability that is especially useful in test-driven development. A composition-based design
+has a lesser number of classes.
+
+Q.5 When using composition, when an object is destroyed, what happens to all the objects it is composed of?
+
+Other classes cannot exist without the owner or parent class
+
+Q6. When using aggregation, when an object is destroyed, what happens to all the objects it is
+composed of?
+
+An aggregation container class and referenced class can have an independent existence.
